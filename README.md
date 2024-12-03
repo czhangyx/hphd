@@ -7,8 +7,10 @@ Before installing our package, you should have Miniconda already installed on yo
 
 ### 2. Create and activate a Conda environment
 You can use our scripts to automatically install all dependencies. Start by cloning the repository:  
-`git clone https://github.com/czhangyx/hphd  
-cd hphd`  
+```
+git clone https://github.com/czhangyx/hphd
+cd hphd
+```
 Run the following command to install a conda environment:  
 `conda env create -f hphd.yaml`  
 This might take several minutes as it needs to download some data to ensure smooth running of the program. Once the environment is successfully installed, activate this environment by running:
