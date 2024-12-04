@@ -2,27 +2,68 @@
 
 set -x #for debugging
 
-wget https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/858/285/GCF_000858285.1_ViralProj15198/GCF_000858285.1_ViralProj15198_genomic.fna.gz #download genome
 
-gunzip GCF_000858285.1_ViralProj15198_genomic.fna.gz #unzip ref genome
+FILE="refgenomes.txt" #file with ref genomes and annotations
 
-mv GCF_000858285.1_ViralProj15198_genomic.fna vzv.fna #rename
+gene_accession=""
+assembly=""
+ref_genome=""
+genes=""
 
-samtools faidx vzv.fna #index ref genome
+while IFS=read -r line; do
+        if [ -z "$line" ]; then
+                if [ -n "$gene_accession"] && [ -n "$assembly" ] &&  [ -n "$ref_genome"] && [ -n "$genes"]; then
+                        echo "Gene $gene_accession being uploaded"
 
-jbrowse add-assembly vzv.fna --out $APACHE_ROOT/jbrowse2 --load copy #load into jbrowse
+                        ####Downloading Data Section and uploading to Jbrowse#####
+
+                        wget $ref_genome #download genome
+
+                        ref_genome_name=$(basename "$ref_genome")
+
+                        gunzip $ref_genome_name #unzip ref genome
+
+                        ref_genome_name_fna=${ref_genome_name%.gz}
+
+                        mv $ref_genome_name_fna $assembly #rename
+
+                        samtools faidx $assembly #index ref genome
+
+                        jbrowse add-assembly $assembly --out $APACHE_ROOT/jbrowse2 --load copy #load into jbrowse
 
 
-#get genome annotations
+                        #get genome annotations
 
-wget https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/858/285/GCF_000858285.1_ViralProj15198/GCF_000858285.1_ViralProj15198_genomic.gff.gz 
+                        wget $genes
 
-gunzip GCF_000858285.1_ViralProj15198_genomic.gff.gz 
+                        genes_name=$(basename "$genes")
 
-jbrowse sort-gff GCF_000858285.1_ViralProj15198_genomic.gff.gz > genes.gff  #to override and add new tracks
-bgzip genes.gff
-tabix genes.gff.gz
+                        gunzip $genes_name
 
-jbrowse add-track genes.gff.gz --out $APACHE_ROOT/jbrowse2 --load copy --assemblyNames=vzv.fna --force #load annotation tracks to jbrowse
+                        track="gene_${assembly}.gff"
 
-jbrowse text-index --out $APACHE_ROOT/jbrowse2 #index for search by gene
+                        jbrowse sort-gff $genes_name > $track #to override and add new tracks
+                        bgzip $track
+                        track_gz="${track}.gz"
+                        tabix $track_gz
+
+                        jbrowse add-track $track_gz --out $APACHE_ROOT/jbrowse2 --load copy --assemblyNames=$assembly #load annotation tracks to jbrowse
+
+                        jbrowse text-index --out $APACHE_ROOT/jbrowse2 #index for search by gene
+                 fi
+
+
+        else
+                if [ -z "$gene_accession" ]; then
+
+                elif [ -z "$assembly" ]; then
+                        assembly="$line"
+                elif [ -z "$ref_genome" ]; then
+                        ref_genome="$line"
+                else [ -z "$genes" ]; then
+                        genes="$line"
+                fi
+            fi
+#make sure the file ends with an empty line
+        done < "$FILE"
+
