@@ -5,15 +5,16 @@ set -x #for debugging
 
 FILE="refgenomes.txt" #file with ref genomes and annotations
 
-gene_accession=""
-assembly=""
+gene_accession_ref=""
 ref_genome=""
+gene_accession_gene=""
 genes=""
+assembly=""
 
 while IFS=read -r line; do
         if [ -z "$line" ]; then
-                if [ -n "$gene_accession"] && [ -n "$assembly" ] &&  [ -n "$ref_genome"] && [ -n "$genes"]; then
-                        echo "Complete Genome $gene_accession being uploaded"
+                if [ -n "$gene_accession"] && [ -n "$gene_accession_ref" ] &&  [ -n "$ref_genome"] && [ -n "$genes"]  && [ -n "$gene_accession_gene"]; then
+                        echo "Complete Genome $gene_accession_ref being uploaded"
 
                         ####Downloading Data Section and uploading to Jbrowse#####
 
@@ -54,14 +55,16 @@ while IFS=read -r line; do
 
 
         else
-                if [ -z "$gene_accession" ]; then
-
-                elif [ -z "$assembly" ]; then
-                        assembly="$line"
+                if [ -z "$gene_accession_ref" ]; then
+                        gene_accession_ref=$line
                 elif [ -z "$ref_genome" ]; then
                         ref_genome="$line"
-                else [ -z "$genes" ]; then
+                elif [ -z "$gene_accession_gene" ]; then
+                        gene_accession_gene="$line"
+                elif [ -z "$genes" ]; then
                         genes="$line"
+                else [ -z "$assembly" ]; then
+                        assembly="$line"
                 fi
             fi
 #make sure the file ends with an empty line
