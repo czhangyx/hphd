@@ -23,7 +23,7 @@ jbrowse sort-gff GCF_000858285.1_ViralProj15198_genomic.gff.gz > genes.gff
 bgzip genes.gff
 tabix genes.gff.gz
 
-jbrowse add-track genes.gff.gz --out $APACHE_ROOT/jbrowse2 --load copy #load annotation tracks to jbrowse
+jbrowse add-track genes.gff.gz --out $APACHE_ROOT/jbrowse2 --load copy ----assemblyNames=vzv.fna #load annotation tracks to jbrowse
 
 jbrowse text-index --out $APACHE_ROOT/jbrowse2 #index for search by gene
 
