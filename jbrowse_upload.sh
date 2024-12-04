@@ -19,7 +19,7 @@ wget https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/858/285/GCF_000858285.1_Vi
 
 gunzip GCF_000858285.1_ViralProj15198_genomic.gff.gz 
 
-jbrowse sort-gff GCF_000858285.1_ViralProj15198_genomic.gff.gz > genes.gff
+jbrowse sort-gff GCF_000858285.1_ViralProj15198_genomic.gff.gz > genes.gff --force #to override and add new tracks
 bgzip genes.gff
 tabix genes.gff.gz
 
