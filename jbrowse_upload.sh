@@ -26,7 +26,3 @@ tabix genes.gff.gz
 jbrowse add-track genes.gff.gz --out $APACHE_ROOT/jbrowse2 --load copy --assemblyNames=vzv.fna --force #load annotation tracks to jbrowse
 
 jbrowse text-index --out $APACHE_ROOT/jbrowse2 #index for search by gene
-
-
-
-  
