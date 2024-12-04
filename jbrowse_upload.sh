@@ -13,7 +13,7 @@ genes=""
 while IFS=read -r line; do
         if [ -z "$line" ]; then
                 if [ -n "$gene_accession"] && [ -n "$assembly" ] &&  [ -n "$ref_genome"] && [ -n "$genes"]; then
-                        echo "Gene $gene_accession being uploaded"
+                        echo "Complete Genome $gene_accession being uploaded"
 
                         ####Downloading Data Section and uploading to Jbrowse#####
 
