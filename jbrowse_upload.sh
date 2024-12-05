@@ -48,6 +48,8 @@ while IFS= read -r line || [ -n "$line | " ]; do
 
                         samtools faidx "$assembly" #index ref genome
 
+                        assembly="${assembly}.fna"
+
                         jbrowse add-assembly "$assembly" --out $APACHE_ROOT/jbrowse2 --load copy #load into jbrowse
 
 
