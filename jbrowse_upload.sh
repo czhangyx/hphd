@@ -26,7 +26,8 @@ while IFS= read -r line || [ -n "$line | " ]; do
                 3) gene_accession_gene=$(awk '{$1=$1};1' <<< "$line") ;;
                 4) genes=$(awk '{$1=$1};1' <<< "$line") ;;
                 5) 
-                        assembly=$(awk '{$1=$1};1' <<< "$line") 
+                        assembly=$(awk '{$1=$1};1' <<< "$line")
+                        assembly="${assembly}.fna"
         
                         echo "Complete Genome Accession Reference: $gene_accession_ref"
                         echo "Reference Genome ftp link: $ref_genome"
@@ -48,7 +49,7 @@ while IFS= read -r line || [ -n "$line | " ]; do
 
                         samtools faidx "$assembly" #index ref genome
 
-                        assembly="${assembly}.fna"
+                        
 
                         jbrowse add-assembly "$assembly" --out $APACHE_ROOT/jbrowse2 --load copy #load into jbrowse
 
