@@ -62,6 +62,8 @@ while IFS= read -r line; do
 
                         gunzip "$genes_name"
 
+                        genes_name="${genes_name::-3}"
+
                         track="gene_${assembly}.gff"
 
                         jbrowse sort-gff "$genes_name" > "$track" #to override and add new tracks
@@ -69,7 +71,7 @@ while IFS= read -r line; do
                         track_gz="${track}.gz"
                         tabix "$track_gz"
 
-                        jbrowse add-track "$track_gz" --out $APACHE_ROOT/jbrowse2 --load copy --assemblyNames="$assembly" #load annotation tracks to jbrowse
+                        jbrowse add-track "$track_gz" --out $APACHE_ROOT/jbrowse2 --load copy --assemblyNames="$assembly" --force #load annotation tracks to jbrowse
 
                         jbrowse text-index --out $APACHE_ROOT/jbrowse2 #index for search by gene
 
