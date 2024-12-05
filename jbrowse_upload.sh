@@ -63,7 +63,7 @@ while IFS=read -r line; do
                         gene_accession_gene="$line"
                 elif [ -z "$genes" ]; then
                         genes="$line"
-                else [ -z "$assembly" ]; then
+                else 
                         assembly="$line"
                 fi
             fi
