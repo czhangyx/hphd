@@ -11,7 +11,7 @@ gene_accession_gene=""
 genes=""
 assembly=""
 
-while IFS=read -r line; do
+while IFS= read -r line; do
         if [ -z "$line" ]; then
                 if [ -n "$gene_accession"] && [ -n "$gene_accession_ref" ] &&  [ -n "$ref_genome"] && [ -n "$genes"]  && [ -n "$gene_accession_gene"]; then
                         echo "Complete Genome $gene_accession_ref being uploaded"
