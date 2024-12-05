@@ -51,7 +51,7 @@ while IFS= read -r line; do
 
                         
 
-                        jbrowse add-assembly "$assembly" --out $APACHE_ROOT/jbrowse2 --load copy #load into jbrowse
+                        jbrowse add-assembly "$assembly" --out $APACHE_ROOT/jbrowse2 --load copy --force #load into jbrowse
 
 
                         #get genome annotations
