@@ -26,7 +26,7 @@ while IFS= read -r line || [ -n "$line" ]; do
                 3) gene_accession_gene="$line" ;;
                 4) genes="$line" ;;
                 5) 
-                        assembly="$line" ;;
+                        assembly="$line" 
         
                         echo "Complete Genome Accession Reference: $gene_accession_ref"
                         echo "Reference Genome ftp link: $ref_genome"
