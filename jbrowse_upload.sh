@@ -13,7 +13,7 @@ assembly=""
 
 counter=0
 
-while IFS= read -r line || [ -n "$line" ]; do
+while IFS= read -r line || [ -n "$line | " ]; do
         if [[ -z "$line" || "$line" =~ ^[[:space:]]*$ ]]; then
                 continue
         fi
@@ -21,12 +21,12 @@ while IFS= read -r line || [ -n "$line" ]; do
         ((counter++)) #want to make sure we read 5 lines at a time
 
         case "$counter" in
-                1) gene_accession_ref="$line" ;;
-                2) ref_genome="$line" ;;
-                3) gene_accession_gene="$line" ;;
-                4) genes="$line" ;;
+                1) gene_accession_ref=$(awk '{$1=$1};1' <<< "$line") ;;
+                2) ref_genome=$(awk '{$1=$1};1' <<< "$line") ;;
+                3) gene_accession_gene=$(awk '{$1=$1};1' <<< "$line") ;;
+                4) genes=$(awk '{$1=$1};1' <<< "$line") ;;
                 5) 
-                        assembly="$line" 
+                        assembly=$(awk '{$1=$1};1' <<< "$line") 
         
                         echo "Complete Genome Accession Reference: $gene_accession_ref"
                         echo "Reference Genome ftp link: $ref_genome"
