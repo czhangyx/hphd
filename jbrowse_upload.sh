@@ -13,7 +13,7 @@ assembly=""
 
 counter=0
 
-while IFS= read -r line || [ -n "$line | " ]; do
+while IFS= read -r line; do
         if [[ -z "$line" || "$line" =~ ^[[:space:]]*$ ]]; then
                 continue
         fi
