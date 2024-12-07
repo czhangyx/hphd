@@ -2,9 +2,9 @@
 
 set -x #for debugging
 
-read -p "Enter name of isolate you want to upload: " FILE
+read -p "Enter name of isolate you want to upload: " file
 
-
+FILE = "isolate_info/$file"
 gene_accession_ref=""
 ref_genome=""
 gene_accession_gene=""
