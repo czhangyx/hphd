@@ -73,7 +73,7 @@ while IFS= read -r line; do
 
                         jbrowse add-track "$track_gz" --out $APACHE_ROOT/jbrowse2 --load copy --assemblyNames="$assembly" --force #load annotation tracks to jbrowse
 
-                        jbrowse text-index --out $APACHE_ROOT/jbrowse2 #index for search by gene
+                        jbrowse text-index --out $APACHE_ROOT/jbrowse2 --force #index for search by gene
 
                         gene_accession_ref=""
                         ref_genome=""
