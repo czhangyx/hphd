@@ -1,0 +1,6 @@
+GCF_000848125.1
+ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/848/125/GCA_000848125.1_ViralProj14625/GCA_000848125.1_ViralProj14625_genomic.fna.gz
+GCF_000848125.1
+ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/848/125/GCA_000848125.1_ViralProj14625/GCA_000848125.1_ViralProj14625_genomic.gff.gz
+hhv7_GCF_000848125.1
+
