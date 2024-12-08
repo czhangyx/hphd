@@ -16,13 +16,6 @@ We are assuming that you are using a Linux operating system (enabled Windows Sub
   ```
   Then run `http://localhost:8080/` with the IP address given from the above command. You should reach a page that has an orange button saying "It Works!"
   
-  4. Inside the same directory, run the following command. This is to copy Jbrowse2 into our apache2 directory (root)
-
-  ```
-     jbrowse create output_folder
-     sudo mv output_folder $APACHE_ROOT/jbrowse2
-     sudo chown -R $(whoami) $APACHE_ROOT/jbrowse2
-  ```
 
   3. Clone our repo! `https://github.com/czhangyx/hphd.git` (also inside the directory created).
 
@@ -32,12 +25,20 @@ We are assuming that you are using a Linux operating system (enabled Windows Sub
  ```
 
 ### Set APACHE_ROOT
-In order for our bash scripts to work, you must set the APACHE_ROOT variable correctly as it is referenced in the scripts. In order to do this, run the below code. This variable must be reset with every new terminal instance.
+1.In order for our bash scripts to work, you must set the APACHE_ROOT variable correctly as it is referenced in the scripts. In order to do this, run the below code. This variable must be reset with every new terminal instance.
 
 ```
 #replace `/var/www/html` with either `/var/www` depending on where the directory is
 export APACHE_ROOT='/var/www/html'
 ```
+
+2. Inside the same directory as before, run the following command. This is to copy Jbrowse2 into our apache2 directory (root)
+
+  ```
+     jbrowse create output_folder
+     sudo mv output_folder $APACHE_ROOT/jbrowse2
+     sudo chown -R $(whoami) $APACHE_ROOT/jbrowse2
+  ```
 
 ## 2. Uploading Data to Jbrowse 2
 
