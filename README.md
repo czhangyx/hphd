@@ -14,7 +14,7 @@ We are assuming that you are using a Linux operating system (enabled Windows Sub
     # sudo apt install iproute2
     ip addr show eth0 | grep "inet\b" | awk '{print $2}' | cut -d/ -f1
   ```
-  Then run `http://localhost:8080/` with the IP address given from the above command. You should reach a page that has an organe button saying "It Works!"
+  Then run `http://localhost:8080/` with the IP address given from the above command. You should reach a page that has an orange button saying "It Works!"
   
   4. Inside the same directory, run the following command. This is to copy Jbrowse2 into our apache2 directory (root)
 
