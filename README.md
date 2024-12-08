@@ -41,21 +41,52 @@ export APACHE_ROOT='/var/www/html'
 
 ## 2. Uploading Data to Jbrowse 2
 
-### Uploading Isolates
-
-2. Command line will prompt you to enter the name of the file that contains isolate information for a specific reference genome when the upload bash script is run. Navigate to hphd `cd hphd` and open the isolates.txt file with  `cat isolates.txt`
-3. Copy over the name of the text file that corresponds with the reference genome of interest
-4. In order to upload to isolate data to Jbrowse navigate to the isolate_info folder  `cd isolate_info`. Run `./isolate_upload.sh` inside this folder. When the command lines promps you for a file name, paste the file from step 3.
-
-  Note: If you get a permission denied error when trying to run the executable, run the following command: `chmod +x ./isolate_upload.sh` follwed by `./isolate_upload.sh`.
-6. Repeat steps 3 and 4 for all isolates of interest.
-6. Navigate to  `http://yourhost/jbrowse2/` and begin exploring!
-
+IMPORTANT: Please follow the below sections in order!! If you try to upload isolate files before genes, the reference genome will be missing!
 
 ### Uploading Genes
 
 1. In order to upload to genes data to Jbrowse navigate to hphd:  `cd hphd`. Run `./jbrowse_upload.sh` inside this folder.
-2. Navigate to  `http://yourhost/jbrowse2/` and begin exploring!
+   
+```
+cd hphd
+./jbrowse_upload.sh
+```
+
+    
+3. Navigate to  `http://yourhost/jbrowse2/` and begin exploring!
+   
+### Uploading Isolates
+
+1. Command line will prompt you to enter the name of the file that contains isolate information for a specific reference genome when the upload bash script is run. Navigate to hphd `cd hphd` and open the isolates.txt file with  `cat isolates.txt`
+```
+cd hphd
+cat isolates.txt
+```
+You will see the name of the .txt file that holds isolate information for specific each type of herpesvirus followed by the name of the reference genome.
+```
+Format:
+.txt file, reference_genome_name
+```
+
+2. Copy over the name of the text file that corresponds with the reference genome of interest as well as the name of the reference genome
+3. In order to upload to isolate data to Jbrowse navigate to the isolate_info folder  `cd isolate_info`. Run `./isolate_upload.sh` inside this folder. When the command lines prompts you for a file name, paste the file from step 2. When the command line prompts you for a reference genome, paste the genome name from step 2.
+   
+```
+cd isolate_info
+./isolate_upload.sh
+```
+
+  Note: If you get a permission denied error when trying to run the executable, run the following command: `chmod +x ./isolate_upload.sh` follwed by `./isolate_upload.sh`.
+```
+chmod +x ./isolate_upload.sh
+./isolate_upload.sh
+```
+
+4. Repeat steps 2 and 3 for all isolates and reference genomes of interest.
+5. Navigate to  `http://yourhost/jbrowse2/` and begin exploring!
+
+
+
 
 
 
