@@ -1,9 +1,9 @@
-ebv_isolate_genomes.txt
-hcmv_isolate_genomes.txt
-hhv6a_isolate_genomes.txt
-hhv6b_isolate_genomes.txt
-hhv7_isolate_genomes.txt
-hsv1_isolate_genomes.txt
-hsv2_isolate_genomes.txt
-kshv_isolate_genomes.txt
-vzv_isolate_genomes.txt
+ebv_isolate_genomes.txt, ebv.fna
+hcmv_isolate_genomes.txt, hcmv.fna
+hhv6a_isolate_genomes.txt, hhv6a.fna
+hhv6b_isolate_genomes.txt, hhv6b.fna
+hhv7_isolate_genomes.txt, hhv7.fna
+hsv1_isolate_genomes.txt, hsv1.fna
+hsv2_isolate_genomes.txt, hsv2.fna
+kshv_isolate_genomes.txt, kshv.fna
+vzv_isolate_genomes.txt, vzv.fna
