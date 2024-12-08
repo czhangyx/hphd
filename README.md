@@ -32,7 +32,7 @@ We are assuming that you are using a Linux operating system (enabled Windows Sub
  ```
 
 ### Set APACHE_ROOT
-In order for our bash scripts to work, you must set the APACHE_ROOT variable correctly as it is referenced in the scripts. In order to do this, run the below code
+In order for our bash scripts to work, you must set the APACHE_ROOT variable correctly as it is referenced in the scripts. In order to do this, run the below code. This variable must be reset with every new terminal instance.
 
 ```
 #replace `/var/www/html` with either `/var/www` depending on where the directory is
