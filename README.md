@@ -52,7 +52,7 @@ export APACHE_ROOT='/var/www/html'
 6. Navigate to  `http://yourhost/jbrowse2/` and begin exploring!
 
 
-###Uploading Genes
+### Uploading Genes
 
 1. In order to upload to genes data to Jbrowse navigate to hphd:  `cd hphd`. Run `./jbrowse_upload.sh` inside this folder.
 2. Navigate to  `http://yourhost/jbrowse2/` and begin exploring!
