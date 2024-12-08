@@ -1,0 +1,494 @@
+{
+  "session": {
+    "drawerPosition": "right",
+    "drawerWidth": 384,
+    "widgets": {
+      "GridBookmark": {
+        "id": "GridBookmark",
+        "type": "GridBookmarkWidget"
+      },
+      "hierarchicalTrackSelector": {
+        "id": "hierarchicalTrackSelector",
+        "type": "HierarchicalTrackSelectorWidget",
+        "faceted": {
+          "filterText": "",
+          "showSparse": false,
+          "showFilters": true,
+          "showOptions": false,
+          "panelWidth": 400
+        }
+      }
+    },
+    "activeWidgets": {},
+    "minimized": false,
+    "id": "m7wIWOnnHorWqJIQVWBZW",
+    "name": "New session 12/8/2024, 2:39:17 PM",
+    "margin": 0,
+    "views": [
+      {
+        "id": "33Y9TmbTAUNXOshe1smpO",
+        "minimized": false,
+        "type": "LinearGenomeView",
+        "offsetPx": -6,
+        "bpPerPx": 104.98068965517241,
+        "displayedRegions": [
+          {
+            "reversed": false,
+            "refName": "NC_001806.2",
+            "start": 0,
+            "end": 152222,
+            "assemblyName": "hsv1.fna"
+          }
+        ],
+        "tracks": [
+          {
+            "id": "KIbLzLcLRfQsrm4xXmE2u",
+            "type": "ReferenceSequenceTrack",
+            "configuration": "hsv1.fna-ReferenceSequenceTrack",
+            "minimized": false,
+            "displays": [
+              {
+                "id": "1Wph7ffE36JQ0j49z24Hy",
+                "type": "LinearReferenceSequenceDisplay",
+                "heightPreConfig": 50,
+                "configuration": "hsv1.fna-ReferenceSequenceTrack-LinearReferenceSequenceDisplay",
+                "showForward": true,
+                "showReverse": true,
+                "showTranslation": true
+              }
+            ]
+          },
+          {
+            "id": "ddwoWhKFXdHX26nL8AuOJ",
+            "type": "FeatureTrack",
+            "configuration": "gene_hsv1.fna.gff",
+            "minimized": false,
+            "displays": [
+              {
+                "id": "t05Nm5g1UrcnOUNIDsSV_",
+                "type": "LinearBasicDisplay",
+                "configuration": "gene_hsv1.fna.gff-LinearBasicDisplay"
+              }
+            ]
+          }
+        ],
+        "hideHeader": false,
+        "hideHeaderOverview": false,
+        "hideNoTracksActive": false,
+        "trackSelectorType": "hierarchical",
+        "showCenterLine": false,
+        "showCytobandsSetting": true,
+        "trackLabels": "",
+        "showGridlines": true,
+        "highlight": [],
+        "colorByCDS": true,
+        "showTrackOutlines": true,
+        "showBookmarkHighlights": true,
+        "showBookmarkLabels": true
+      },
+      {
+        "id": "sVAHnss0OBHWaqtPNEjsh",
+        "minimized": false,
+        "type": "LinearGenomeView",
+        "offsetPx": -13,
+        "bpPerPx": 145.09849906191369,
+        "displayedRegions": [
+          {
+            "reversed": false,
+            "refName": "NC_001798.2",
+            "start": 0,
+            "end": 154675,
+            "assemblyName": "hsv2.fna"
+          }
+        ],
+        "tracks": [
+          {
+            "id": "oMr4FRcS5wCaH8XuNd7FB",
+            "type": "ReferenceSequenceTrack",
+            "configuration": "hsv2.fna-ReferenceSequenceTrack",
+            "minimized": false,
+            "displays": [
+              {
+                "id": "ssOhyWUHDo_QOQAjyMRd0",
+                "type": "LinearReferenceSequenceDisplay",
+                "heightPreConfig": 50,
+                "configuration": "hsv2.fna-ReferenceSequenceTrack-LinearReferenceSequenceDisplay",
+                "showForward": true,
+                "showReverse": true,
+                "showTranslation": true
+              }
+            ]
+          },
+          {
+            "id": "q1izm95gdjrVqwhNsk42D",
+            "type": "FeatureTrack",
+            "configuration": "gene_hsv2.fna.gff",
+            "minimized": false,
+            "displays": [
+              {
+                "id": "Yd6iJJ8jztAlCV6UjCIi5",
+                "type": "LinearBasicDisplay",
+                "configuration": "gene_hsv2.fna.gff-LinearBasicDisplay"
+              }
+            ]
+          }
+        ],
+        "hideHeader": false,
+        "hideHeaderOverview": false,
+        "hideNoTracksActive": false,
+        "trackSelectorType": "hierarchical",
+        "showCenterLine": false,
+        "showCytobandsSetting": true,
+        "trackLabels": "",
+        "showGridlines": true,
+        "highlight": [],
+        "colorByCDS": true,
+        "showTrackOutlines": true,
+        "showBookmarkHighlights": true,
+        "showBookmarkLabels": true
+      },
+      {
+        "id": "DcZtGRxufyxjcAouyd2MF",
+        "minimized": false,
+        "type": "LinearGenomeView",
+        "offsetPx": 0,
+        "bpPerPx": 117.15196998123827,
+        "displayedRegions": [
+          {
+            "reversed": false,
+            "refName": "NC_001348.1",
+            "start": 0,
+            "end": 124884,
+            "assemblyName": "vzv.fna"
+          }
+        ],
+        "tracks": [
+          {
+            "id": "Vqeri1DIxg85bxYO54CDQ",
+            "type": "ReferenceSequenceTrack",
+            "configuration": "vzv.fna-ReferenceSequenceTrack",
+            "minimized": false,
+            "displays": [
+              {
+                "id": "78jpCNhxCkJK8OkKM7kBF",
+                "type": "LinearReferenceSequenceDisplay",
+                "heightPreConfig": 50,
+                "configuration": "vzv.fna-ReferenceSequenceTrack-LinearReferenceSequenceDisplay",
+                "showForward": true,
+                "showReverse": true,
+                "showTranslation": true
+              }
+            ]
+          },
+          {
+            "id": "TIrv2llKMm1RN1toGx5P7",
+            "type": "FeatureTrack",
+            "configuration": "gene_vzv.fna.gff",
+            "minimized": false,
+            "displays": [
+              {
+                "id": "nQmxQcvbH2wfseziHZyV2",
+                "type": "LinearBasicDisplay",
+                "configuration": "gene_vzv.fna.gff-LinearBasicDisplay"
+              }
+            ]
+          }
+        ],
+        "hideHeader": false,
+        "hideHeaderOverview": false,
+        "hideNoTracksActive": false,
+        "trackSelectorType": "hierarchical",
+        "showCenterLine": false,
+        "showCytobandsSetting": true,
+        "trackLabels": "",
+        "showGridlines": true,
+        "highlight": [],
+        "colorByCDS": true,
+        "showTrackOutlines": true,
+        "showBookmarkHighlights": true,
+        "showBookmarkLabels": true
+      },
+      {
+        "id": "fASQmjoyzrt3XMm6Fla4P",
+        "minimized": false,
+        "type": "LinearGenomeView",
+        "offsetPx": -9,
+        "bpPerPx": 221.0562851782364,
+        "displayedRegions": [
+          {
+            "reversed": false,
+            "refName": "NC_006273.2",
+            "start": 0,
+            "end": 235646,
+            "assemblyName": "hcmv.fna"
+          }
+        ],
+        "tracks": [
+          {
+            "id": "Fo0mu4eBcufC7MT2Mwn4G",
+            "type": "ReferenceSequenceTrack",
+            "configuration": "hcmv.fna-ReferenceSequenceTrack",
+            "minimized": false,
+            "displays": [
+              {
+                "id": "jmjFZHDAu9jR05aYsX4sp",
+                "type": "LinearReferenceSequenceDisplay",
+                "heightPreConfig": 50,
+                "configuration": "hcmv.fna-ReferenceSequenceTrack-LinearReferenceSequenceDisplay",
+                "showForward": true,
+                "showReverse": true,
+                "showTranslation": true
+              }
+            ]
+          },
+          {
+            "id": "sGHKKDGXw08u6mQPhdWG6",
+            "type": "FeatureTrack",
+            "configuration": "gene_hcmv.fna.gff",
+            "minimized": false,
+            "displays": [
+              {
+                "id": "KZLuXdQ5fJVaxFG_akXfm",
+                "type": "LinearBasicDisplay",
+                "configuration": "gene_hcmv.fna.gff-LinearBasicDisplay"
+              }
+            ]
+          }
+        ],
+        "hideHeader": false,
+        "hideHeaderOverview": false,
+        "hideNoTracksActive": false,
+        "trackSelectorType": "hierarchical",
+        "showCenterLine": false,
+        "showCytobandsSetting": true,
+        "trackLabels": "",
+        "showGridlines": true,
+        "highlight": [],
+        "colorByCDS": true,
+        "showTrackOutlines": true,
+        "showBookmarkHighlights": true,
+        "showBookmarkLabels": true
+      },
+      {
+        "id": "GiWN7z9nPrPOLJX4EYtVM",
+        "minimized": false,
+        "type": "LinearGenomeView",
+        "offsetPx": -14,
+        "bpPerPx": 149.51031894934334,
+        "displayedRegions": [
+          {
+            "reversed": false,
+            "refName": "NC_001664.4",
+            "start": 0,
+            "end": 159378,
+            "assemblyName": "hhv6a.fna"
+          }
+        ],
+        "tracks": [
+          {
+            "id": "LqWqUMi2yRhebbnAy5ioR",
+            "type": "ReferenceSequenceTrack",
+            "configuration": "hhv6a.fna-ReferenceSequenceTrack",
+            "minimized": false,
+            "displays": [
+              {
+                "id": "QRFELs7ZasqrEkgoik_n5",
+                "type": "LinearReferenceSequenceDisplay",
+                "heightPreConfig": 50,
+                "configuration": "hhv6a.fna-ReferenceSequenceTrack-LinearReferenceSequenceDisplay",
+                "showForward": true,
+                "showReverse": true,
+                "showTranslation": true
+              }
+            ]
+          },
+          {
+            "id": "M4kbxOg-hggOA-3keuMOL",
+            "type": "FeatureTrack",
+            "configuration": "gene_hhv6a.fna.gff",
+            "minimized": false,
+            "displays": [
+              {
+                "id": "4AzIjFMv1NgXWm8_oyKYa",
+                "type": "LinearBasicDisplay",
+                "configuration": "gene_hhv6a.fna.gff-LinearBasicDisplay"
+              }
+            ]
+          }
+        ],
+        "hideHeader": false,
+        "hideHeaderOverview": false,
+        "hideNoTracksActive": false,
+        "trackSelectorType": "hierarchical",
+        "showCenterLine": false,
+        "showCytobandsSetting": true,
+        "trackLabels": "",
+        "showGridlines": true,
+        "highlight": [],
+        "colorByCDS": true,
+        "showTrackOutlines": true,
+        "showBookmarkHighlights": true,
+        "showBookmarkLabels": true
+      },
+      {
+        "id": "dpoXdIqeVsecF5PFclHWf",
+        "minimized": false,
+        "type": "LinearGenomeView",
+        "offsetPx": -53,
+        "bpPerPx": 168.97435897435898,
+        "displayedRegions": [
+          {
+            "refName": "NC_000898.1",
+            "start": 0,
+            "end": 162114,
+            "assemblyName": "hhv6b.fna"
+          }
+        ],
+        "tracks": [
+          {
+            "id": "dtXqABhbE0Z23Td59EOXE",
+            "type": "ReferenceSequenceTrack",
+            "configuration": "hhv6b.fna-ReferenceSequenceTrack",
+            "minimized": false,
+            "displays": [
+              {
+                "id": "7xIde3tEvUtCc5g68mOz6",
+                "type": "LinearReferenceSequenceDisplay",
+                "heightPreConfig": 50,
+                "configuration": "hhv6b.fna-ReferenceSequenceTrack-LinearReferenceSequenceDisplay",
+                "showForward": true,
+                "showReverse": true,
+                "showTranslation": true
+              }
+            ]
+          },
+          {
+            "id": "BVs-bI9X6JCJVtecAy-dX",
+            "type": "FeatureTrack",
+            "configuration": "gene_hhv6b.fna.gff",
+            "minimized": false,
+            "displays": [
+              {
+                "id": "RvinTGBKCKlbPM-cZnRBt",
+                "type": "LinearBasicDisplay",
+                "configuration": "gene_hhv6b.fna.gff-LinearBasicDisplay"
+              }
+            ]
+          }
+        ],
+        "hideHeader": false,
+        "hideHeaderOverview": false,
+        "hideNoTracksActive": false,
+        "trackSelectorType": "hierarchical",
+        "showCenterLine": false,
+        "showCytobandsSetting": true,
+        "trackLabels": "",
+        "showGridlines": true,
+        "highlight": [],
+        "colorByCDS": true,
+        "showTrackOutlines": true,
+        "showBookmarkHighlights": true,
+        "showBookmarkLabels": true
+      },
+      {
+        "id": "K-WmLRNDwXf0bk_cTCg4R",
+        "minimized": false,
+        "type": "LinearGenomeView",
+        "offsetPx": -1,
+        "bpPerPx": 143.60225140712944,
+        "displayedRegions": [
+          {
+            "reversed": false,
+            "refName": "NC_001716.2",
+            "start": 0,
+            "end": 153080,
+            "assemblyName": "hhv7.fna"
+          }
+        ],
+        "tracks": [
+          {
+            "id": "FMPbmNWRxt-K-q2g3_OiP",
+            "type": "ReferenceSequenceTrack",
+            "configuration": "hhv7.fna-ReferenceSequenceTrack",
+            "minimized": false,
+            "displays": [
+              {
+                "id": "i2f0BmxWZS6JQzFSpReVJ",
+                "type": "LinearReferenceSequenceDisplay",
+                "heightPreConfig": 50,
+                "configuration": "hhv7.fna-ReferenceSequenceTrack-LinearReferenceSequenceDisplay",
+                "showForward": true,
+                "showReverse": true,
+                "showTranslation": true
+              }
+            ]
+          },
+          {
+            "id": "ABclqfvnCuwjcFcoK6kEA",
+            "type": "FeatureTrack",
+            "configuration": "gene_hhv7.fna.gff",
+            "minimized": false,
+            "displays": [
+              {
+                "id": "DshLOWR_aaWVF6TEk1ffj",
+                "type": "LinearBasicDisplay",
+                "configuration": "gene_hhv7.fna.gff-LinearBasicDisplay"
+              }
+            ]
+          }
+        ],
+        "hideHeader": false,
+        "hideHeaderOverview": false,
+        "hideNoTracksActive": false,
+        "trackSelectorType": "hierarchical",
+        "showCenterLine": false,
+        "showCytobandsSetting": true,
+        "trackLabels": "",
+        "showGridlines": true,
+        "highlight": [],
+        "colorByCDS": true,
+        "showTrackOutlines": true,
+        "showBookmarkHighlights": true,
+        "showBookmarkLabels": true
+      },
+      {
+        "id": "TMQDIqYK7stcmy2Apkaq8",
+        "minimized": false,
+        "type": "CircularView",
+        "offsetRadians": -1.5707963267948966,
+        "bpPerPx": 242.26883747334492,
+        "tracks": [],
+        "hideVerticalResizeHandle": false,
+        "hideTrackSelectorButton": false,
+        "lockedFitToWindow": true,
+        "disableImportForm": false,
+        "height": 400,
+        "displayedRegions": [
+          {
+            "refName": "NC_001806.2",
+            "start": 0,
+            "end": 152222,
+            "reversed": false,
+            "assemblyName": "hsv1.fna"
+          }
+        ],
+        "scrollX": 0,
+        "scrollY": 0,
+        "minimumRadiusPx": 25,
+        "spacingPx": 10,
+        "paddingPx": 80,
+        "lockedPaddingPx": 100,
+        "minVisibleWidth": 6,
+        "minimumBlockWidth": 20,
+        "trackSelectorType": "hierarchical"
+      }
+    ],
+    "sessionTracks": [],
+    "sessionAssemblies": [],
+    "temporaryAssemblies": [],
+    "connectionInstances": [],
+    "sessionConnections": [],
+    "focusedViewId": "TMQDIqYK7stcmy2Apkaq8",
+    "sessionPlugins": []
+  }
+}
