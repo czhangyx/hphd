@@ -87,6 +87,9 @@ chmod +x ./isolate_upload.sh
 5. Navigate to  `http://yourhost/jbrowse2/` and begin exploring!
 
 
+## 3. Navigating Through The Static Website
+
+Go to https://romaankolekar.github.io/jbrowse2 to use our genome browser! Select one of the 9 pathogens to explore! Note: when selecting tracks the reference genome and first gene selctor (right under the reference genome) should be selected as it contains information about all the isolates. The isolate gene tracks works occasionally but do not always show up! You can still get all the information needed by selcting the gene track under the reference genome. Furthermore, select color by CDS in the purple track dropdown in order to explore amino acid coding sequences!
 
 
 
