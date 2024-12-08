@@ -24,7 +24,7 @@ We are assuming that you are using a Linux operating system (enabled Windows Sub
      sudo chown -R $(whoami) $APACHE_ROOT/jbrowse2
   ```
 
-  3. Clone our repo! `https://github.com/czhangyx/hphd.git` (also inside the directory created.
+  3. Clone our repo! `https://github.com/czhangyx/hphd.git` (also inside the directory created).
 
  ```
   git clone https://github.com/czhangyx/hphd.git
