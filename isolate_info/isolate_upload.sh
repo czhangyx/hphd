@@ -3,6 +3,7 @@
 set -x #for debugging
 
 read -p "Enter name of isolate you want to upload: " FILE
+read -p "Enter reference genome:" reference
 
 
 gene_accession_ref=""
@@ -35,24 +36,6 @@ while IFS= read -r line; do
                         echo "Gene annotations gff files: $genes"
                         echo "Assembly Name: $assembly"
 
-                        ####Downloading Data Section and uploading to Jbrowse#####
-
-                        wget "$ref_genome" #download genome
-
-                        ref_genome_name=$(basename "$ref_genome")
-
-                        gunzip "$ref_genome_name" #unzip ref genome
-
-                        ref_genome_name_fna=${ref_genome_name%.gz}
-
-                        mv "$ref_genome_name_fna" "$assembly" #rename
-
-                        samtools faidx "$assembly" #index ref genome
-
-                        
-
-                        jbrowse add-assembly "$assembly" --out $APACHE_ROOT/jbrowse2 --load copy --force #load into jbrowse
-
 
                         #get genome annotations
 
@@ -71,7 +54,7 @@ while IFS= read -r line; do
                         track_gz="${track}.gz"
                         tabix "$track_gz"
 
-                        jbrowse add-track "$track_gz" --out $APACHE_ROOT/jbrowse2 --load copy --assemblyNames="$assembly" --force #load annotation tracks to jbrowse
+                        jbrowse add-track "$track_gz" --out $APACHE_ROOT/jbrowse2 --load copy --assemblyNames="$reference" --force #load annotation tracks to jbrowse
 
                         jbrowse text-index --out $APACHE_ROOT/jbrowse2 #index for search by gene
 
