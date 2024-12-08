@@ -62,7 +62,7 @@ cd hphd
 cd hphd
 cat isolates.txt
 ```
-You will see the name of the .txt file that holds isolate information for specific each type of herpesvirus followed by the name of the reference genome.
+You will see the name of the .txt file that holds isolate information for each type of herpesvirus followed by the name of the reference genome.
 ```
 Format:
 .txt file, reference_genome_name
