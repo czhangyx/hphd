@@ -46,7 +46,7 @@ IMPORTANT: Please follow the below sections in order!! If you try to upload isol
 
 ### Uploading Genes
 
-1. In order to upload to genes data to Jbrowse navigate to hphd:  `cd hphd`. Run `./jbrowse_upload.sh` inside this folder.
+1. In order to upload the genes data to Jbrowse navigate to hphd:  `cd hphd`. Run `./jbrowse_upload.sh` inside this folder.
    
 ```
 cd hphd
