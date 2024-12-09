@@ -6,7 +6,7 @@ We are assuming that you are using a Linux operating system (enabled Windows Sub
 ### Clone Repo
 
   1. Create a new directory. Take note of this directory's name as all following commands will be run inside of this directory.
-  2. Run sudo `service apache2 start` to start up the web server. Navigate to `http://ipaddress` (AWS terminal) or if running on a Linux system run the below code to get the IP address:
+  2. Run `sudo service apache2 start` to start up the web server. Navigate to `http://ipaddress` (AWS terminal) or if running on a Linux system run the below code to get the IP address:
 
   ```
     # from within WSL, run the linux server launch command to launch the service, then print out you WSL IP address so you can access the server from your Windows browser
